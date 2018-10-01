@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="moje portfolio">
+    <meta name="author" content="Bartosz Żołynia">
+    <title>Bartosz Żołynia - portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- WŁASNE STYLE CSS -->
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <!-- CZCIONKI -->
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124020147-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-124020147-1');
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- przycisk płynne scrollowanie do góry-->
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollToTop').fadeIn();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                }
+            });
+
+
+            $('.scrollToTop').click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <button class="scrollToTop" title="Go to top"><i class="fas fa-angle-double-up"></i>
+    </button>
+
+    <!-- Navbar -->
+    <div class="moj_top">
+        <nav class="navbar navbar-dark navbar-expand-md justify-content-center">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="img/mniejsze_logo_FED.png" alt="logo" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navContent">
+                    <div class="navbar-nav ml-auto">
+
+                        <a id="link1" href="#" class="nav-item nav-link active">O mnie</a>
+
+                        <a id="link2" href="#" class="nav-item nav-link">Moje projekty</a>
+
+                        <a id="link3" href="#" class="nav-item nav-link">Zainteresowania</a>
+
+                        <a id="link4" href="#" class="nav-item nav-link">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- skecja o mnie -->
+    <div class="jumbotron jumbotron-fluid text-center top">
+        <div class="container">
+            <h1 class="text-uppercase top-header">Witam!</h1>
+            <p class="top-text">Nazywam się Bartosz Żołynia</p>
+            <hr class="style-six">
+            <p class="p_top">junior front-end developer</p>
+        </div>
+    </div>
+
+
+    <div id="techniki">
+        <!-- sekcja o technologiach jakie stosuje-->
+        <section class="techniki">
+            <h3 class="text-center text-uppercase tech_header">swoją przygodę z programowaniem rozpocząłem w grudniu 2017 roku</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="tech_item text-center">
+                            <img class="img-fluid img_tech" src="img/box1.png" alt="box1">
+                            <h3 class="tech_text">Nowoczesne i zgodne z aktualnymi standardami</h3>
+                            <p class="opis_tech">Podczas tworzenia stron korzystam z takich technologii jak: HTML, CSS oraz elementów JavaScript - którego cały czas się uczę i praktykuję.</p>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="tech_item text-center">
+                            <img class="img-fluid img_tech" src="img/box3.png" alt="box3">
+                            <h3 class="tech_text">Responsywne - dopasowujące się do urządzeń mobilnych</h3>
+                            <p class="opis_tech">Korzystam z frameworku Bootstrap 4. <br>To dzięki niemu strony dopasowują się do każdego urządzenia, począwszy od laptopa po smartfon.</p>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="tech_item text-center">
+                            <img class="img-fluid img_tech" src="img/box2.png" alt="box2">
+                            <h3 class="tech_text">Dodatkowo tworzę proste elementy graficzne w popularnych programach</h3>
+                            <p class="opis_tech">Oprócz programowania chcę rozwijać się jako grafik, połączenie front-endu i grafiki bardzo dobrze się ze sobą łączy. Tworzę proste loga, banery, napisy itp.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- sekcja projektowa -->
+    <div id="projekty">
+        <section class="portfolio">
+            <h3 class="text-center text-uppercase header_port">projekty, z których jestem dumny:</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md">
+                        <a href="http://samoobrona.rzeszow.pl" target="_blank"><img class="img-fluid mx-auto d-block img_port" src="img/portfolio1.png"></a>
+                    </div>
+                    <div class="col-md">
+                        <h3 class="text-center tytul_port">Samoobrona Rzeszów</h3>
+                        <p class="text-center opis_port">Strona wykonana na potrzebę otrzymania certyfikatu i pozytywnego zaliczenia Warsztatu Programistycznego Front-End Developer, w którym brałem czynny udział. Podczas budowy strony zastosowałem technologię HTML, CSS, elementy JavaScritp oraz Bootstrap 4.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <h3 class="text-center tytul_port">Podkarpacka Szkoła Ju-Jitsu Karate</h3>
+                        <p class="text-center opis_port">Strona wykonana na zlecenie szkoły/klubu sportowego, w której sam uczestniczę i jestem instruktorem. Wykonanie w znanym systemie zarządzania treścią CMS - Wordpress. Znam potrzebne pluginy i wtyczki. Obenie pracuje na gotowych szablonach, ale liczę, że z biegiem czasu naucze się tworzyć swoje indywidualne.</p>
+                    </div>
+                    <div class="col-md">
+                        <a href="http://jujitsukarate.pl" target="_blank"><img class="img-fluid mx-auto d-block img_port" src="img/portfolio2.png"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <a href="http://compensare.pl" target="_blank"><img class="img-fluid mx-auto d-block img_port" src="img/portfolio3.png"></a>
+                    </div>
+                    <div class="col-md">
+                        <h3 class="text-center tytul_port">Compensare Polska</h3>
+                        <p class="text-center opis_port">Strona wykonana na zlecenie. Oparta na systemie zarządzania treścią CMS - Wordpress. Zastosowane zostały popularne wtyczki. Strona wymagała wiele ingerencji w edytowaniu kodu, nadpisywaniu domyślnych styli.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="zainteresowania">
+        <section class="hobby">
+            <h3 class="text-center text-uppercase hobby_head">Co robię w wolnym czasie?</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="item1">
+                            <p class="p_zdj">Trenuję ju-jitsu</p>
+                        </div>
+                        <div class="item2">
+                            <p class="p_zdj">Opiekuję się swoim Corgi Pembroke</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="item3">
+                            <p class="p_zdj">Interesuję się kulturą japońską</p>
+                        </div>
+                        <div class="item4">
+                            <p class="p_zdj">Gotuję przeróżne dania</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- sekcja kontaktowa-->
+    <div id="kontakt">
+        <section class="kontakt">
+            <h2 class="text-center text-uppercase cont_h2">skontaktuj się ze mną:</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="napisz_left">
+                            <form action="">
+                                <label for="name" class="form-control-label">Imię i Nazwisko</label>
+                                <input type="text" id="name" class="form-control">
+                                <label for="email" class="form-control-label">E-mail</label>
+                                <input type="email" id="email" class="form-control">
+                                <label for="message" class="form-control-label">Treść Wiadomości</label>
+                                <textarea id="message" colls="30" rows="5" class="form-control"></textarea>
+                                <button class="btn button_kontakt text-center mx-auto d-block">Wyślij Wiadomość</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="cont_page"><img src="img/contact1.png" class="img-fluid mx-2 my-4" alt="kontakt1"><span>zolyniabartosz@gmail.com</span></div>
+                        <div class="cont_page"><img src="img/contact2.png" class="img-fluid mx-2 my-4" alt="kontakt2"><span>531-253-353</span></div>
+                        <div class="cont_page"><img src="img/contact5.png" class="img-fluid mx-2 my-4" alt="kontakt3"><span>Bartosz Żołynia</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <section class=" text-center copyright ">
+        <div class="container ">
+            &copy; Copyrights 2018 - wykonał Bartosz Żołynia *WSZELKIE PRAWA ZASTRZEŻONE*
+        </div>
+    </section>
+
+
+
+
+    <script>
+        jQuery(function($) {
+            //zrezetuj scrolla
+            $.scrollTo(0);
+            $('#link1').click(function() {
+                $.scrollTo($('#techniki'), 700);
+            });
+        });
+
+        jQuery(function($) {
+            //zrezetuj scrolla
+            $.scrollTo(0);
+            $('#link2').click(function() {
+                $.scrollTo($('#projekty'), 700);
+            });
+        });
+
+        jQuery(function($) {
+            //zrezetuj scrolla
+            $.scrollTo(0);
+            $('#link3').click(function() {
+                $.scrollTo($('#zainteresowania'), 700);
+            });
+        });
+
+        jQuery(function($) {
+            //zrezetuj scrolla
+            $.scrollTo(0);
+            $('#link4').click(function() {
+                $.scrollTo($('#kontakt'), 700);
+            });
+        });
+
+    </script>
+
+    <script src="bootstrap/jquery.scrollTo.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js "></script>
+
+
+
+</body>
+
+</html>
